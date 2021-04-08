@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+
+	<tlib-version>1.0</tlib-version>
+	<short-name>MKS</short-name>
+	<uri>WEB-INF/test.tld</uri>
+	<tag>
+		<name>product</name>
+		<tag-class>customtaghandlers.TagHandler</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>product</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>models.orm.Product</type>
+		</attribute>
+	</tag>
+	<tag>
+		<name>user</name>
+		<tag-class>customtaghandlers.TagHandlerUser</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>user</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>models.User</type>
+		</attribute>
+	</tag>
+</taglib>  
